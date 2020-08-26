@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KP Chang</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <!-- 使用c3.js所需套件 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.5.4/c3.min.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.5.4/c3.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.18/c3.min.js"></script>
+
+
+    <!-- 串接API所需套件 -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- 動態圖表所需資源chart.js -->
+
+    <!-- 動態圖表所需資源amchart -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- navbar區 -->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark d-flex justify-content-between">
+            <a id="KP-home" class="navbar-brand" href="./index.html"><i class="fas fa-home"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a id="my-skills" class="nav-item nav-link">專業技能</a>
+                    <a id="my-jobs" class="nav-item nav-link">工作經歷</a>
+                    <a id="my-education" class="nav-item nav-link">教育研習</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主內容區 -->
+    <div class="main-body">
+        <main>
+            <!-- 基本資料區 -->
+            <section class="personal-info">
+                <div class="avatar">
+                    <img class="avatar-img" src="./img/profile.jpg">
+                </div>
+                <div class="personal-text-info">
+                    <h1 class="name">
+                        張國屏 <span class="eng-name">Marvin Chang</span>
+                    </h1>
+                    <div class="title">
+                        UIUX研究 | 網頁設計 | 資料分析視覺化
+                    </div>
+                    <p class="description">
+                        你好，我是張國屏，我擁有前端設計與數據分析的專案管理與實作能力。歡迎參考以下連結了解我的互動設計、程式與資料處理相關作品。
+                    </p>
+                    <div clss="social-top-wrapper">
+                        <div class="social-media">
+                            <a class="social-media-link mx-2" href="https://codepen.io/KPChang/pens/public" target="_blank">
+                                <i class="fab fa-codepen fa-lg"></i>
+                            </a>
+                            <a class="social-media-link mx-2" href="https://www.linkedin.com/in/kuoping-chang-a15193140/" target="_blank">
+                                <i class="fab fa-linkedin fa-lg"></i>
+                            </a>
+                            <a class="social-media-link mx-2" href="https://kuopingchang.com/" target="_blank">
+                                <i class="fas fa-user-circle fa-lg"></i>
+                            </a>
+                            <a class="social-media-link mx-2" href="mailto:ckuoping@gmail.com">
+                                <i class="fas fa-envelope fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 圖表資訊區 -->
+            <div class="container">
+                <h4 class="text-center">程式語法與設計軟體</h4>
+                <p class="text-center">我擅長前端應用程式設計以及數據資料分析的語法處理；此外，出身設計背景的我，對於Adobe系列軟體也相當駕輕就熟。我不僅可以獨力完成作業，也能順利在團隊中與多方角色協作溝通。</p>
+                <div class="row">
+                    <div id="programming-skill" class="col-12 col-md-12 col-lg-4 mb-5"></div>
+                    <div id="design-skill" class="class col-12 col-md-12 col-lg-8 mb-5 ">
+                    </div>
+
+                </div>
+            </div>
+            <!-- 塊體介紹區 -->
+            <div class="skill-experience">
+                <section id="move-to-skills" class="skill-section">
+                    <h2>專業技能</h2>
+                    <div class="skills">
+                        <div class="skill">
+                            <h3 class="skill-name">網頁程式開發
+                                <a href="https://codepen.io/KPChang/pens/public" target="_blank">
+                                    <i class="codepen-icon fab fa-codepen "></i> Codepen
+                                </a>
+
+                            </h3>
+                            <p class="skill-description">
+                                具備網頁應用程式的開發能力。熟悉 HTML、CSS 和 JavaScript，並對於基礎的演算法有一定的掌握度；可打造兼具前後端的 Web App 產品，熟悉網頁切版、RWD、操作 DOM 事件、使用 AJAX 與串接 API，並使用Flask架站。
+
+                            </p>
+                        </div>
+                        <div class="skill">
+                            <h3 class="skill-name">使用者體驗設計</h3>
+                            <p class="skill-description">
+                                專長使用者研究與體驗設計。熟悉脈絡設計與認知心理學洞悉使用者需求與痛點。精通 Adobe XD 與相關系列軟體製作 Wireframe 和 Mockup。並熟悉Arduino 與 Leap Motion 進行人機互動體感偵測，與使用 Unity 開發虛實整合互動。
+                            </p>
+                        </div>
+                        <div class="skill">
+                            <h3 class="skill-name">資料分析與管理
+                                <a href="https://gist.github.com/ckuoping" target="_blank">
+                                    <i class="fab fa-github"></i> Github
+                                </a>
+                            </h3>
+                            <p class="skill-description">
+                                擅長專案管理與資料分析。能夠掌握專案之規劃、執行與協調，同時具備分析程式撰寫的能力。使用SQL管理資料庫，並精通Python和相關套件如Panda與Scikit-learn 進行資料分析、機器學習與視覺化，以整合專案的數據與進度。
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+                <section id="move-to-experience" class="experience-section">
+                    <h2 class="job-experience">工作經歷</h2>
+                    <div class="experience">
+                        <div class="experience-item">
+                            <h3 class="job-title">產品開發工程師</h3>
+                            <span class="company"><i class="far fa-building"></i>盛力創意科技</span>
+                            <span class="duration"><i class="far fa-calendar-alt"></i>2019 年 12 月 - 2020 年 4 月</span>
+                            <span class="company"><i class="fas fa-briefcase"></i> 兼職</span>
+                            <div class="experience-detail-group">
+                                <div class="experience-bar bar-1"></div>
+                                <div class="experience-detail">協助美國品牌KUPA INC開發美甲機中階機種的產品造型。<br>公司與美國總公司的英語會議翻譯與紀錄。</div>
+                            </div>
+                            <div><a class="check-project btn btn-secondary btn-sm" href="./html/project1.html" role="button" target="_blank"><i class="fas fa-search"></i> 工作成果</a></div>
+                        </div>
+
+                        <div class="experience-item">
+                            <h3 class="job-title">VR系統研究專員</h3>
+                            <span class="company"><i class="far fa-building"></i>臺灣師範大學</span>
+                            <span class="duration"><i class="far fa-calendar-alt"></i>2019 年 1 月 - 2019 年 10 月</span>
+                            <span class="company"><i class="fas fa-briefcase"></i> 全職</span>
+                            <div class="experience-detail-group">
+                                <div class="experience-bar bar-2"></div>
+                                <div class="experience-detail">VR師資培訓系統之交互介面設計。<br>VR師資培訓系統之操作行為研究。<br>虛擬實境應用於教師課堂管理能力訓練之研究計畫管理。</div>
+                            </div>
+                            <div><a class="check-project btn btn-secondary btn-sm" href="./html/project2.html" role="button" target="_blank"><i class="fas fa-search"></i> 工作成果</a><a class="check-project btn btn-secondary btn-sm ml-1" href="https://kuopingchang.com/vr-classroom/"
+                                    role="button" target="_blank"><i class="fas fa-search"></i> 專案介紹</a></div>
+                        </div>
+
+                        <div class="experience-item">
+                            <h3 class="job-title">互動設計工程師</h3>
+                            <span class="company"><i class="far fa-building"></i>工業技術研究院</span>
+                            <span class="duration"><i class="far fa-calendar-alt"></i>2017 年 11 月 - 2019 年 1 月</span>
+                            <span class="company"><i class="fas fa-briefcase"></i> 全職</span>
+                            <div class="experience-detail-group">
+                                <div class="experience-bar bar-3"></div>
+                                <div class="experience-detail">負責電光所於2018年智慧觸控展展出之OLED顯示系統專案管理。<br>使用Unity與C#實作OLED透明顯示系統的互動效果與數位介面。<br>OLED透明顯示器結合影像辨識之專利發表。</div>
+                            </div>
+                            <div>
+                                <a class="check-project btn btn-secondary btn-sm" href="./html/project3.html" role="button" target="_blank"><i class="fas fa-search"></i> 工作成果</a>
+                                <a class="check-project btn btn-secondary btn-sm ml-1" href="https://kuopingchang.com/iguide/" role="button" target="_blank"><i class="fas fa-search"></i> 專案介紹</a></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="education-section"></section>
+            </div>
+            <!-- 時間軸區 -->
+            <div class="container">
+                <h2 id="move-to-education" class="text-center mt-5">研習與學術經歷</h2>
+                <div class="row">
+                    <div class="timeline-container">
+                        <ul class="timeline">
+                            <li>
+                                <h3>2020</h3>
+                                <h5>大數據分析 自強工業科學基金會</h5>
+                                <p>錄取清華大學自強基金會的大數據分析師養成班，完成368小時、約莫3個月的資料分析訓練。使用python進行機器學習完成美國之貸款人呆帳率預測，並獨立開發網站。
+                                    <div><a class="check-project btn btn-info btn-sm" href="http://excited-string.surge.sh/index.html" role="button" target="_blank"><i class="fas fa-search"></i> 網站成果</a></div>
+                                </p>
+                            </li>
+                            <li>
+                                <h3>2016</h3>
+                                <h5>文化替代役 國立台灣美術館</h5>
+                                <p>於台中的國立台灣美術館服役。協助國家級美術單位使用科技與設計創作達到文化平權(身心障礙者的藝術體驗)的目的。</p>
+                            </li>
+                            <li>
+                                <h3>2015</h3>
+                                <h5>互動設計所 台夫特科技大學</h5>
+                                <p>錄取教育部2015年藝術與設計菁英海外培訓全額獎學金前往荷蘭 TU Delft 就讀互動設計所，鑽研用戶的正面情感體驗提升。
+                                    <div><a class="check-project btn btn-info btn-sm" href="https://kuopingchang.com/alecto-b3-baby-monitor/" role="button" target="_blank"><i
+                                            class="fas fa-search"></i> 查看作品</a></div>
+                                </p>
+                            </li>
+                            <li>
+                                <h3>2013</h3>
+                                <h5>工業設計所 國立成功大學</h5>
+                                <p>研究擴增實境應用於高齡者認知能力的訓練與提升。論文成果為完成一座以浮空顯像為技術的認知復健裝置，並架設於長青中心提供高齡者使用。
+                                    <div><a class="check-project btn btn-info btn-sm" href="https://kuopingchang.com/goodlock/" role="button" target="_blank"><i class="fas fa-search"></i> 查看作品</a></div>
+                                </p>
+                            </li>
+                            <li>
+                                <h3>2009</h3>
+                                <h5>工業設計系 國立成功大學</h5>
+                                <p>以全年級第二名的成績畢業。畢業專題研究心智障礙者的肢體人因與認知能力因素，設計一套適合他們工作使用的烘焙用具，並獲得2013新一代設計獎銅獎。</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 底部icon區 -->
+    <footer>
+        <div class="social-icons-group">
+            <a class="social-icons-design" href="https://codepen.io/KPChang/pens/public" target="_blank"><i class="fab fa-codepen fa-lg"></i></a>
+            <a class="social-icons-design" href="https://www.linkedin.com/in/kuoping-chang-a15193140/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a class="social-icons-design" href="https://kuopingchang.com/" target="_blank"><i class="fas fa-user-circle fa-lg"></i></a>
+            <a class="social-icons-design" href="mailto:ckuoping@gmail.com"><i class="fas fa-envelope fa-lg"></i></a>
+        </div>
+    </footer>
+
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/action.js"></script>
+    <script src="./js/animation.js"></script>
+</body>
+
+</html>

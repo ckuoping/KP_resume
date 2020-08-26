@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, Helvetica, sans-serif, "Microsoft JhengHei", "微軟正黑體";
+    background-color: rgb(235, 235, 235);
+}
+
+
+/* 首頁大圖 */
+
+.bg {
+    position: absolute;
+    border-radius: 0px 0px 200px 0px;
+    z-index: 0;
+    height: 52rem;
+    width: 60rem;
+    top: -10rem;
+    bottom: -55rem;
+    left: -5rem;
+    background-image: url("../img/nail_main.jpg");
+    /* background-position: right bottom 8em; */
+    background-position: center;
+    /* background-position: right -42em bottom 0px; */
+    background-size: cover;
+    /* filter: grayscale(50%); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 300px 50px;
+    margin-bottom: 100px;
+}
+
+
+/* 標題 */
+
+.title {
+    margin-top: 150px;
+    z-index: 10;
+}
+
+.title h2 {
+    margin: 200px 20px 20px 0px;
+    /* margin-bottom: 20px; */
+    font-size: 64px;
+}
+
+.title h4 {
+    margin: 0px 20px 10px 0px;
+    font-size: 32px;
+}
+
+.title h2,
+.title h4 {
+    color: #2C3E50;
+    font-family: 'Anton', sans-serif;
+}
+
+
+/* 內容 */
+
+.content {
+    margin-top: 300px;
+}
+
+.div-img,
+.div-info {
+    padding: 20px;
+}
+
+.sub-title {
+    font-weight: 900;
+}
+
+
+/* 輪播器左右鍵重新設計 */
+
+
+/*
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 100px;
+        width: 100px;
+        outline: black;
+        background-size: 100%, 100%;
+        background-image: none;
+    }
+    
+    .carousel-control-next-icon:after {
+        content: '►';
+        font-size: 35px;
+        color: rgb(170, 170, 170);
+    }
+    
+    .carousel-control-prev-icon:after {
+        content: '◄';
+        font-size: 35px;
+        color: rgb(170, 170, 170);
+    }
+    */
+
+.p2 {
+    font-size: 54px;
+    margin-top: 100px;
+    background: linear-gradient(-60deg, #e71717 0%, #192ef0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* 讀取球 */
+
+.ball-groups {
+    width: 35px;
+    margin: 0px auto;
+}
+
+.ball {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    z-index: 1;
+}
+
+.yellow {
+    background-color: #f5e82f;
+    animation: animateYellow 1.0s infinite;
+}
+
+.blue {
+    background-color: #4cb8f5;
+    transform: translate(80px, 0);
+    animation: animateBlue 2.8s infinite;
+}
+
+.green {
+    background-color: #a6e630;
+    transform: translate(-80px, 0);
+    animation: animateGreen 1.6s infinite;
+}
+
+.red {
+    background-color: #e63630;
+    transform: translate(160px, 0);
+    animation: animateRed 3.7s infinite;
+}
+
+.purple {
+    background-color: #f0018c;
+    transform: translate(-160px, 0);
+    animation: animatePurple 2.0s infinite;
+}
+
+@keyframes animateYellow {
+    50% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes animateGreen {
+    50% {
+        transform: translate(80px, 0px);
+    }
+    100% {
+        transform: translate(-80px, 0px);
+    }
+}
+
+@keyframes animateBlue {
+    50% {
+        transform: translate(-80px, 0px);
+    }
+    100% {
+        transform: translate(80px, 0px);
+    }
+}
+
+@keyframes animateRed {
+    50% {
+        transform: translate(-160px, 0px);
+    }
+    100% {
+        transform: translate(160px, 0px);
+    }
+}
+
+@keyframes animatePurple {
+    50% {
+        transform: translate(160px, 0px);
+    }
+    100% {
+        transform: translate(-160px, 0px);
+    }
+}
+
+.mid-bg {
+    background-image: url("../img/nail_5.png");
+    background-position: center;
+    background-size: cover;
+    /* filter: grayscale(50%); */
+    /* background-attachment: fixed; */
+    padding: 280px 50px;
+}
+
+.product-img1 {
+    height: 400px;
+    background-image: url("../img/nail_6.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.product-img2 {
+    height: 400px;
+    background-image: url("../img/nail_7.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* 中頁區域 */
+
+.last-bg {
+    background-image: url("../img/nail_8.jpg");
+    background-position: center;
+    background-size: cover;
+    /* filter: grayscale(50%); */
+    background-attachment: fixed;
+    padding: 380px 50px;
+}
+
+.mid-title {
+    margin-top: 150px;
+}
+
+.mid-title h2 {
+    margin-bottom: 20px;
+    font-size: 72px;
+    font-family: 'Yeseva One', cursive;
+}
+
+.mid-title h4 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.mid-title h2,
+.mid-title h4 {
+    color: #2C3E50;
+}
+
+.product-img3 {
+    border-radius: 200px 5px 200px 5px;
+    transition: all 0.5s ease;
+}
+
+.product-img3:hover {
+    border-radius: 5px 200px 5px 200px;
+}
+
+
+/* 
+=============================================
+             MEDIA QUERY 1 <700px
+=============================================
+*/
+
+@media screen and (max-width: 1080px) {
+    .heading {
+        margin-top: 400px;
+    }
+    .content {
+        margin-top: 10px
+    }
+}

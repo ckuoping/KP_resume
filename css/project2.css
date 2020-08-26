@@ -1,0 +1,335 @@
+body {
+    font-family: Arial, Helvetica, sans-serif, "Microsoft JhengHei", "微軟正黑體";
+    background-color: rgb(235, 235, 235);
+}
+
+
+/* 首頁大圖 */
+
+#main-img {
+    display: relative;
+    height: 480px;
+    /* background-color: #181c1f; */
+    background: linear-gradient(60deg, #181c1f 0%, #262e77 100%);
+    overflow: hidden;
+}
+
+#main-img img {
+    position: absolute;
+    width: 1200px;
+    top: -200px;
+    right: -400px;
+    z-index: 0;
+}
+
+#main-img h2 {
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    z-index: 10;
+    color: rgb(2, 247, 255);
+    font-family: 'Audiowide', cursive;
+    font-size: 58px;
+}
+
+#main-img .sub-h2 {
+    font-size: 36px;
+}
+
+
+/* VR Demo */
+
+.vr-demo {
+    margin: 80px 30px 150px 30px;
+}
+
+.hover-style-1 {
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-style-1 span {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hover-style-1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    background-color: rgba(136, 136, 136, 0.5);
+    transition: all 0.5s;
+}
+
+.hover-style-1:hover::before {
+    opacity: 1;
+    transform: skewX(-180deg) scale(1, 1);
+}
+
+.vr-demo h3 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+
+/* 兩種介面說明區  */
+
+.types-info {
+    /* height: 200px; */
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 64px;
+    margin-bottom: 50px;
+}
+
+.types-detail {
+    padding: 0px 55px;
+}
+
+.type-1 {
+    background-color: #2471A3;
+    padding: 20px;
+}
+
+.type-2 {
+    background-color: #F4D03F;
+    padding: 20px;
+}
+
+.types-info-text {
+    font-size: 32px;
+    padding: 0px;
+}
+
+.types-info-text-hover {
+    font-size: 24px;
+    padding: 20px;
+}
+
+.types-detail h3 {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.hover-style-2 {
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-style-2:before,
+.hover-style-2:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: all 0.3s;
+    transform: translate(0, -100%);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.hover-style-2:after {
+    transition-delay: 0.2s;
+}
+
+.hover-style-2:hover:before,
+.hover-style-2:hover:after {
+    transform: translate(0, 0);
+}
+
+
+/* UX介面區 */
+
+
+/* UX介面title */
+
+.hover-style-3 {
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.5s;
+    position: relative;
+}
+
+.hover-style-3:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border: 3px solid rgba(65, 65, 65, 0.5);
+    transition: all 0.3s;
+}
+
+.hover-style-3:hover:before {
+    opacity: 0;
+    transform: scale(1.2, 1.2);
+}
+
+.hover-style-3:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    background-color: rgba(34, 34, 34, 0.1);
+    transition: all 0.3s;
+    transform: scale(0.5, 0.5);
+}
+
+.hover-style-3:hover:after {
+    opacity: 0.8;
+    transform: scale(1, 1);
+}
+
+.UX-interface-title {
+    margin-top: 100px;
+}
+
+.UX-interface-title h1 {
+    font-weight: 900;
+    font-size: 36px;
+    padding: 20px 100px;
+    color: rgb(51, 51, 51);
+}
+
+.UX-interface-info {
+    margin-top: 50px;
+    padding: 0px 15%;
+}
+
+.UX-interface-front {
+    padding-top: 100px;
+}
+
+.txt-block {
+    background: rgba(41, 41, 41, 0.5);
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 20px rgb(179, 179, 179); */
+}
+
+.txt-block h5 {
+    font-weight: 900;
+}
+
+
+/* UX介面圖片*/
+
+.UX-interface {
+    position: relative;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.cover {
+    display: inline-block;
+    height: 250px;
+    min-width: 420px;
+    margin: 15px;
+    border-radius: 1px;
+}
+
+.atvImg {
+    border-radius: 1px;
+    transform-style: preserve-3d;
+    -webkit-tap-highlight-color: rgba(#000, 0);
+}
+
+.atvImg img {
+    border-radius: 1px;
+    box-shadow: 0 2px 8px rgba(14, 21, 47, 0.25);
+}
+
+.atvImg-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: all 0.2s ease-out;
+}
+
+.atvImg-container.over .atvImg-shadow {
+    box-shadow: 0 45px 100px rgba(14, 21, 47, 0.4), 0 16px 40px rgba(14, 21, 47, 0.4);
+}
+
+.atvImg-layers {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    transform-style: preserve-3d;
+}
+
+.atvImg-rendered-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    background-size: cover;
+    transition: all 0.1s ease-out;
+    /* overflow: hidden; */
+    border-radius: 8px;
+}
+
+.atvImg-shadow {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    transition: all 0.2s ease-out;
+    box-shadow: 0 8px 30px rgba(14, 21, 47, 0.6);
+}
+
+.atvImg-shine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 60%);
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 100%;
+        position: relative;
+        transform: translate(0%, 0%);
+        top: 0;
+        left: 0;
+    }
+    .cover {
+        display: block;
+        height: 200px;
+        width: 250px;
+        margin: 15px auto;
+    }
+}

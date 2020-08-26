@@ -1,0 +1,357 @@
+* {
+    color: #2C3E50;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif, "Microsoft JhengHei", "微軟正黑體";
+    background-color: rgb(235, 235, 235);
+}
+
+#fixed-col {
+    /* border: 1px solid gray; */
+    position: fixed;
+    background: black;
+    background-image: url('../img/dp_2.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 35%;
+    /* height: 500px; */
+    height: 100%;
+}
+
+#movable-col {
+    position: relative;
+    /* position: absolute; */
+    /* 要比上面的width35%還要小 */
+    left: 30%;
+    padding-right: 10px;
+}
+
+
+/* 標題 */
+
+.title {
+    margin-top: 150px;
+}
+
+.title h2 {
+    margin: 200px 20px 20px 0px;
+    /* margin-bottom: 20px; */
+    font-size: 54px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.title h4 {
+    margin: 0px 20px 10px 0px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+/* 內容 */
+
+.intro {
+    margin: 100px 0px 0px 7%;
+}
+
+.intro h4 {
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.intro p {
+    font-size: 12px;
+}
+
+.dp-place {
+    margin-top: 20px;
+    background-image: url("../img/dp_3.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+.feature-groups {
+    margin: 20px 0px;
+    transition: all 0.3s ease;
+}
+
+.feature-groups img {
+    /* transform: rotate(-45deg); */
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.feature-groups:hover {
+    background: white;
+    box-shadow: 0px 0px 20px rgb(196, 196, 196);
+    padding: 2% 10%;
+    border-radius: 10px;
+}
+
+.feature-groups:hover .feature-img {
+    transform: rotate(-90deg);
+    border-radius: 10px;
+}
+
+.feature-groups h6 {
+    font-weight: 700;
+}
+
+.feature-groups p {
+    margin-bottom: 0px;
+}
+
+.interaction h6 {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.interaction img {
+    width: 85%;
+}
+
+
+/* 3D Box */
+
+@keyframes cube-rotate {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+/* box */
+
+.scene {
+    width: 300px;
+    height: 200px;
+    /* border: 1px solid #CCC; */
+    margin: 80px auto;
+    perspective: 400px;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-50px);
+    transition: transform 1s;
+}
+
+.box-1 {
+    animation: cube-rotate 10s infinite ease;
+}
+
+.box-2 {
+    animation: cube-rotate 15s infinite ease-in-out;
+}
+
+.box-1:hover {
+    animation: none
+}
+
+.box-2:hover {
+    animation: none
+}
+
+.box__face {
+    position: absolute;
+    border: 2px solid black;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+
+/* 調整尺寸 */
+
+.box__face--front,
+.box__face--back {
+    width: 300px;
+    height: 225px;
+    line-height: 200px;
+}
+
+.box__face--right,
+.box__face--left {
+    width: 100px;
+    height: 225px;
+    left: 100px;
+    line-height: 200px;
+}
+
+.box__face--top {
+    width: 300px;
+    height: 100px;
+    top: 50px;
+    line-height: 100px;
+}
+
+.box__face--bottom {
+    width: 300px;
+    height: 100px;
+    top: 75px;
+    line-height: 100px;
+}
+
+
+/*
+.box__face--front {
+    background: rgba(189, 189, 189, 0.7);
+    background-image: url('../img/dp_12.png');
+    background-position: center;
+    background-size: cover;
+}
+*/
+
+.front-1 {
+    background: rgba(189, 189, 189, 0.7);
+    background-image: url('../img/dp_12.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.front-2 {
+    background: rgba(189, 189, 189, 0.7);
+    background-image: url('../img/dp_13.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* 調整顏色 */
+
+.box__face--right {
+    background: rgba(236, 236, 236, 0.7);
+}
+
+.box__face--back {
+    background: hsla(0, 0%, 23%, 0.8);
+}
+
+.box__face--left {
+    background: rgba(236, 236, 236, 0.7);
+}
+
+.box__face--top {
+    /* background: hsla(240, 100%, 50%, 0.7); */
+}
+
+.box__face--bottom {
+    background: hsla(0, 0%, 10%, 0.9);
+}
+
+
+/* 調整角度 */
+
+.box__face--front {
+    transform: rotateY( 0deg) translateZ( 50px);
+}
+
+.box__face--back {
+    transform: rotateY(180deg) translateZ( 50px);
+}
+
+.box__face--right {
+    transform: rotateY( 90deg) translateZ(150px);
+}
+
+.box__face--left {
+    transform: rotateY(-90deg) translateZ(150px);
+}
+
+.box__face--top {
+    transform: rotateX( 90deg) translateZ(100px);
+}
+
+.box__face--bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.dp-interface {
+    width: 100%;
+}
+
+
+/*
+.dp-interface {
+    margin-top: 20px;
+    background-image: url("../img/dp_14.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+*/
+
+
+/* hover */
+
+.hover-1 {
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(156, 156, 156, 0.25);
+    transition: all 0.3s;
+    transform: translate(35%, 190%) rotate(-30deg);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.hover-1:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(63, 63, 63, 0.25);
+    transition: all 0.3s;
+    transform: translate(-35%, -190%) rotate(-30deg);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.hover-1:before {
+    transition-delay: 0.2s;
+}
+
+.hover-1:hover::before,
+.hover-1:hover::after {
+    transform: translate(0, 0);
+}
+
+
+/* 內容 */
+
+
+/* 
+=============================================
+             MEDIA QUERY 1 <700px
+=============================================
+*/
+
+@media screen and (max-width: 1080px) {
+    .heading {
+        margin-top: 400px;
+    }
+    .content {
+        margin-top: 10px
+    }
+}
