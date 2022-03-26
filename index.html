@@ -21,7 +21,8 @@
     <!-- 動態圖表所需資源chart.js -->
 
     <!-- 動態圖表所需資源amchart -->
-
+    <!-- 輪播動畫splide -->
+    <link rel="stylesheet" href="./assets/dist/css/splide.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -91,6 +92,40 @@
 
                 </div>
             </div>
+            <!-- 個人專案區 -->
+            <div class="container">
+                <h4 class="text-center">來看看我的Side Projects吧!</h4>
+
+                <p class="text-center">我平時喜歡探索不同的使用者介面互動行為，並應用在前端程式上，定期規畫主題性的side projects完成。更多內容可以參考我的Github:
+                    <a href="https://github.com/ckuoping">https://github.com/ckuoping</a>。</p>
+                <div class="row">
+                    <div style="width: 100%; margin:0 auto">
+                        <div id="image-slider" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+
+                                    <li id="sideproject-img1" class="splide__slide" style="cursor: pointer;">
+                                        <img src="./img/Sp_1.jpg">
+                                    </li>
+                                    <li id="sideproject-img2" class="splide__slide" style="cursor: pointer;">
+                                        <img src="./img/air_1.png">
+                                    </li>
+                                    <li id="sideproject-img3" class="splide__slide" style="cursor: pointer;">
+                                        <img src="./img/LC_1.jpg">
+                                    </li>
+                                    <li id="sideproject-img4" class="splide__slide" style="cursor: pointer;">
+                                        <img src="./img/nail_6.jpg">
+                                    </li>
+                                    <li id="sideproject-img5" class="splide__slide" style="cursor: pointer;">
+                                        <img src="./img/mp_1.jpg">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
             <!-- 塊體介紹區 -->
             <div class="skill-experience">
                 <section id="move-to-skills" class="skill-section">
@@ -139,7 +174,6 @@
 
                                 <div class="experience-detail">1. CAE模流分析桌上型應用程式的UIUX設計與功能優化。<br>2. Angular網頁應用程式前端開發(網站內容為高分子材料的檢索)。<br>3. 交大資工UIUX產學合作負責。</div>
                             </div>
-                            <!-- <div><a class="check-project btn btn-secondary btn-sm" href="./html/project1.html" role="button" target="_blank"><i class="fas fa-search"></i> 工作成果</a></div> -->
                         </div>
 
                         <div class="experience-item">
@@ -232,6 +266,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <!-- bootstrap.min.js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- 輪播動畫splide -->
+    <script src="assets/dist/js/splide.min.js"></script>
     <script src="./js/action.js"></script>
     <script src="./js/animation.js"></script>
 </body>

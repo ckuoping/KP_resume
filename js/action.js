@@ -5,6 +5,16 @@ const my_jobs = document.querySelector("#my-jobs")
 
 const my_education = document.querySelector("#my-education")
 
+const sideproject_links = [
+    { name: '#sideproject-img1', link: "https://ckuoping.github.io/responsive_shopping_web/" },
+    { name: '#sideproject-img2', link: "https://github.com/ckuoping/airqualityAPI" },
+    { name: '#sideproject-img3', link: "http://excited-string.surge.sh/index.html" },
+    { name: '#sideproject-img4', link: "./html/project1.html" },
+    { name: '#sideproject-img5', link: "https://github.com/ckuoping/musicplayer" },
+]
+
+
+
 // 偵聽事件
 my_skills.addEventListener('click', function(event) {
     console.log(event.target)
@@ -20,6 +30,13 @@ my_jobs.addEventListener('click', function(event) {
 my_education.addEventListener('click', function(event) {
     scrollToEducation()
 })
+
+for (let i = 0; i < sideproject_links.length; i++) {
+    document.querySelector(`${sideproject_links[i].name}`).addEventListener('click', function(event) {
+        window.open(`${sideproject_links[i].link}`);
+    })
+}
+
 
 document.addEventListener('scroll', timeline);
 
@@ -56,8 +73,8 @@ function timeline() {
     //compare scrolltop with scrolltop on each timeline event
     let timeline_events = document.querySelectorAll('.timeline li');
     for (i = 0; i < timeline_events.length; i++) {
-        console.log(i, timeline_events[i].offsetTop)
-        console.log(threshold_position)
+        // console.log(i, timeline_events[i].offsetTop)
+        // console.log(threshold_position)
         if (timeline_events[i].offsetTop < threshold_position) {
             timeline_events[i].classList.add('visible');
         } else {
@@ -67,3 +84,12 @@ function timeline() {
     }
 }
 // timeline();
+
+// 個人專案區
+let splideimg = new Splide('#image-slider', {
+    cover: true,
+    heightRatio: 0.2,
+    height: 450,
+});
+
+splideimg.mount()
