@@ -101,6 +101,8 @@ p {
     width: 180px;
     height: 180px;
     border-radius: 50%;
+    background: #ffffff;
+    box-shadow: -20px 20px 39px #e6e6e6, 20px -20px 39px #ffffff;
 }
 
 .name {
