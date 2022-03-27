@@ -97,6 +97,8 @@ function timeline() {
 
 // 個人專案區
 let splideimg = new Splide('#image-slider', {
+    type: 'loop',
+    autoplay: true,
     cover: true,
     heightRatio: 0.2,
     height: 450,
