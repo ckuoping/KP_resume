@@ -5,6 +5,9 @@ const my_jobs = document.querySelector("#my-jobs")
 
 const my_education = document.querySelector("#my-education")
 
+const project_filters = document.querySelectorAll('.project-filter')
+
+
 const sideproject_links = [
     { name: '#sideproject-img1', link: "https://ckuoping.github.io/responsive_shopping_web/" },
     { name: '#sideproject-img2', link: "https://github.com/ckuoping/airqualityAPI" },
@@ -34,6 +37,13 @@ my_education.addEventListener('click', function(event) {
 for (let i = 0; i < sideproject_links.length; i++) {
     document.querySelector(`${sideproject_links[i].name}`).addEventListener('click', function(event) {
         window.open(`${sideproject_links[i].link}`);
+    })
+    document.querySelector(`${sideproject_links[i].name}`).addEventListener('mouseover', function(event) {
+        project_filters[i].classList.remove('disappear')
+    })
+
+    document.querySelector(`${sideproject_links[i].name}`).addEventListener('mouseout', function(event) {
+        project_filters[i].classList.add('disappear')
     })
 }
 
