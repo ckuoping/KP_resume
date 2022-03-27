@@ -1,4 +1,6 @@
 // 變數
+const my_projects = document.querySelector("#my-projects")
+
 const my_skills = document.querySelector("#my-skills")
 
 const my_jobs = document.querySelector("#my-jobs")
@@ -19,6 +21,10 @@ const sideproject_links = [
 
 
 // 偵聽事件
+my_projects.addEventListener('click', function(event) {
+    scrollToProjects()
+})
+
 my_skills.addEventListener('click', function(event) {
     console.log(event.target)
     scrollToSkills()
@@ -51,6 +57,15 @@ for (let i = 0; i < sideproject_links.length; i++) {
 document.addEventListener('scroll', timeline);
 
 // 後台區
+function scrollToProjects() {
+    document.getElementById('move-to-projects').scrollIntoView({
+        block: 'start',
+        inline: 'nearest',
+        behavior: 'smooth'
+    })
+}
+
+
 
 function scrollToSkills() {
     document.getElementById('move-to-skills').scrollIntoView({
