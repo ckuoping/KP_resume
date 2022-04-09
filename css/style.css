@@ -170,6 +170,38 @@ p {
     font-family: Arial, Helvetica, sans-serif, "Microsoft JhengHei", "微軟正黑體";
 }
 
+.skill-box-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-box {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background: #ffffff;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-box:hover {
+    background-color: rgb(255, 212, 59)
+}
+
+.skill-box i {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.skill-box span {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
 
 /* 個人專案 Side Project */
 
