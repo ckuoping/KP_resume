@@ -19,6 +19,12 @@ body {
     font-size: 24px;
 }
 
+.lang-btn{
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 24px;
+}
+
 #my-projects,
 #my-skills,
 #my-jobs,
@@ -38,9 +44,9 @@ main {
 /* 塊體介紹區的標題 */
 
 h2 {
-    font-size: 32px;
+    font-size: 28px;
     margin: 20px 0 8px;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 
@@ -399,7 +405,9 @@ footer {
     opacity: 1;
 }
 
-
+.lang-btn-wrapper{
+    right:100px
+}
 /* 
 =============================================
              MEDIA QUERY 1 >530px
@@ -407,6 +415,9 @@ footer {
 */
 
 @media screen and (min-width:430px) {
+    .lang-btn-wrapper{
+        right:100px
+    }
     /* bar長度 */
     .bar-1 {
         height: 75px;
@@ -422,6 +433,9 @@ footer {
 @media screen and (min-width:530px) {
     #KP-home {
         margin-left: 50px;
+    }
+    .lang-btn-wrapper{
+        right:100px
     }
     /* bar長度 */
     .bar-1 {
@@ -440,6 +454,9 @@ footer {
 */
 
 @media screen and (min-width: 576px) {
+    .lang-btn-wrapper{
+        right:100px
+    }
     .social-media {
         visibility: visible;
         text-align: center;
@@ -589,6 +606,10 @@ footer {
     #KP-home {
         margin-left: 100px;
     }
+
+    .lang-btn-wrapper{
+        right:150px
+    }
     .bar-3 {
         height: 75px;
     }
@@ -604,6 +625,9 @@ footer {
 @media screen and (min-width: 992px) {
     #KP-home {
         margin-left: 150px;
+    }
+    .lang-btn-wrapper{
+        right:150px
     }
     .main-body {
         display: flex;

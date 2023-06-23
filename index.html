@@ -30,11 +30,16 @@
 <body>
     <!-- navbar區 -->
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark d-flex justify-content-between">
+        <nav  class="navbar navbar-expand-sm navbar-dark bg-dark d-flex justify-content-between">
             <a id="KP-home" class="navbar-brand" href="./index.html"><i class="fas fa-home"></i></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+            <div style="display: flex;align-items: center;">
+                <a style="position: absolute;display: flex;align-self: center;" class="lang-btn-wrapper"><i class="fas fa-globe-americas lang-btn"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            </div>
+
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a id="my-projects" class="nav-item nav-link">作品專案</a>
@@ -43,6 +48,7 @@
                     <a id="my-education" class="nav-item nav-link">教育研習</a>
                 </div>
             </div>
+            
         </nav>
     </header>
 
@@ -87,31 +93,31 @@
                 </div>
             </section>
             <!-- 圖表資訊區 -->
-            <div class="container">
-                <h4 class="text-center">工作技能與專業能力</h4>
-                <p class="text-center">專長軟體系統的UIUX設計與開發；負責過的系統包含桌上型應用程式、網頁應用程式以及ARVR平台。因應工作性質與自我精進，我具備使用者研究、原型設計與程式開發等工作能力。</p>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-6 mb-5">
+            <div class="container expertise-text-info">
+                <h4 class="text-center expertise-title">工作技能與專業能力</h4>
+                <p class="text-center expertise-description">專長軟體系統的UIUX設計與開發；負責過的系統包含桌上型應用程式、網頁應用程式以及ARVR平台。因應工作性質與自我精進，我具備使用者研究、原型設計與程式開發等工作能力。</p>
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-md-6 col-lg-6 mb-5 ">
                         <div class="skill-box-group">
                             <div class="group1">
                                 <div class="skill-box box1">
                                     <i class="fas fa-pen-nib"></i>
-                                    <span>UIUX設計</span>
+                                    <span class="text-center">UIUX設計</span>
                                 </div>
                                 <div class="skill-box box2">
                                     <i class="fas fa-desktop"></i>
-                                    <span>前端開發</span>
+                                    <span class="text-center">前端開發</span>
                                 </div>
                             </div>
                             <div class="group2">
                                 <div class="skill-box box3">
                                     <i class="fas fa-tasks"></i>
-                                    <span>專案管理</span>
+                                    <span class="text-center">專案管理</span>
 
                                 </div>
                                 <div class="skill-box box4">
                                     <i class="fas fa-chart-bar"></i>
-                                    <span>數據分析</span>
+                                    <span class="text-center">數據分析</span>
                                 </div>
                             </div>
 
@@ -120,12 +126,12 @@
 
                     </div>
                     <div class="col-12 col-md-6 col-lg-6 mb-5" style="width:100%;height:100%;margin: 0 auto;text-align: center; ">
-                        <span>軟體與程式</span>
+                        <!-- <span>軟體與程式</span> -->
                         <ul class="list-group" style="text-align: left;">
                             <li class="list-group-item">
-                                <span style="font-weight: 600;">UX Prototyping:</span> Adobe XD, AI, Figma</li>
+                                <span style="font-weight: 600;">UX Prototyping:</span> Adobe XD, Figma</li>
                             <li class="list-group-item list-group-item-secondary">
-                                <span style="font-weight: 600;">Front-end Developement:</span> HTML5, CSS3(Bootstrap), JavaScript(Angular, jQuery), Data Visualization(Chart.js)</li>
+                                <span style="font-weight: 600;">Front-end Developement:</span> HTML, CSS(Bootstrap), JavaScript(jQuery, Chart.js), TypeScript(Angular)</li>
                             <li class="list-group-item">
                                 <span style="font-weight: 600;">Others: </span> Git(version control system)、Unity & Solidworks(prototyping)</li>
                             <li class="list-group-item list-group-item-secondary">
@@ -139,10 +145,11 @@
                 </div>
             </div>
             <!-- 個人專案區 -->
-            <div class="container">
-                <h4 id="move-to-projects" class="text-center">來看看我的Portfolios吧!</h4>
+            <div class="container portfolio-text-info">
+                <h4 id="move-to-projects" class="text-center portfolio-title">來看看我的Portfolios吧!</h4>
 
-                <p class="text-center">我平時喜歡研究各種介面互動行為和UI元件，並應用在前端程式上；定期規畫主題性的小專案製作UIUX Prototypes。更多內容可以參考我的Github:
+                <p class="text-center">
+                    <span class="portfolio-description">我平時喜歡研究各種介面互動行為和UI元件，並應用在前端程式上；定期規畫主題性的小專案製作UIUX Prototypes。更多內容可以參考我的Github:</span>
                     <a href="https://github.com/ckuoping">https://github.com/ckuoping</a>。</p>
                 <div class="row">
                     <div style="width: 100%; margin:0 auto">
@@ -190,33 +197,36 @@
             <!-- 塊體介紹區 -->
             <div class="skill-experience">
                 <section id="move-to-skills" class="skill-section">
-                    <h2>專業技能</h2>
+                    <h2 class="skill-title">專業技能</h2>
                     <div class="skills">
                         <div class="skill">
-                            <h3 class="skill-name">網頁程式開發
+                            <h3 class="skill-name">
+                                <span class="skill-1">網頁程式開發</span>
                                 <a href="https://codepen.io/KPChang/pens/public" target="_blank">
-                                    <i class="codepen-icon fab fa-codepen "></i> Codepen
+                                    <i class="codepen-icon fab fa-codepen "></i>
                                 </a>
 
                             </h3>
-                            <p class="skill-description">
+                            <p class="skill-description skill-1">
                                 具備前端網頁的開發能力。熟悉Angular、HTML、CSS 和 JavaScript；擅長網頁切版、RWD、操作 DOM 事件、串接 API取得即時JSON資料，並使用Flask架站。
-
                             </p>
                         </div>
                         <div class="skill">
-                            <h3 class="skill-name">UIUX設計</h3>
-                            <p class="skill-description">
+                            <h3 class="skill-name">
+                                <span class="skill-2">UIUX設計</span>
+                            </h3>
+                            <p class="skill-description skill-2">
                                 擅長使用者經驗研究和評估法。熟悉AdobeXD與相關系列軟體製作Wireframe和Mockup。也具有Leap Motion和Unity製作虛實整合與人機互動的經驗。
                             </p>
                         </div>
                         <div class="skill">
-                            <h3 class="skill-name">專案管理
+                            <h3 class="skill-name">
+                                <span class="skill-3">專案管理</span>
                                 <a href="https://gist.github.com/ckuoping" target="_blank">
-                                    <i class="fab fa-github"></i> Github Gist
+                                    <i class="fab fa-github"></i> 
                                 </a>
                             </h3>
-                            <p class="skill-description">
+                            <p class="skill-description skill-3">
                                 在各工作階段也身兼專案管理者，平衡與客戶廠商的應對以及內部的開發需求。此外也具備Python資料分析、機器學習與視覺化的相關經驗。
                             </p>
                         </div>
@@ -224,42 +234,40 @@
                     </div>
                 </section>
                 <section id="move-to-experience" class="experience-section">
-                    <h2 class="job-experience">工作經歷</h2>
+                    <h2 class="job-experience work-title">工作經歷</h2>
                     <div class="experience">
                         <div class="experience-item">
-                            <h3 class="job-title">高級設計師</h3>
-                            <span class="company"><i class="far fa-building"></i>Moldex3D 科盛科技</span>
-                            <span class="duration"><i class="far fa-calendar-alt"></i>2020 年 9 月 - 在職中</span>
+                            <h3 class="job-title work-1">高級設計師</h3>
+                            <span class="company"><i class="far fa-building"></i><span class="work-1">Moldex3D 科盛科技</span></span>
+                            <span class="duration"><i class="far fa-calendar-alt"></i><span class="work-1">2020 年 9 月 - 在職中</span></span>
 
                             <div class="experience-detail-group">
-
-                                <div class="experience-detail">1. CAE模流分析桌上型應用程式的UIUX設計與功能優化。<br>2. Angular網頁應用程式前端開發(網站內容為高分子材料的檢索)。<br>3. 交大資工UIUX產學合作負責。</div>
+                                <div class="experience-detail work-1">1. CAE模流分析桌上型應用程式的UIUX設計與功能優化。<br>2. Angular網頁應用程式前端開發(網站內容為高分子材料的檢索)。<br>3. 交大資工UIUX產學合作負責。</div>
                             </div>
                         </div>
 
                         <div class="experience-item">
-                            <h3 class="job-title">VR研究計畫助理</h3>
-                            <span class="company"><i class="far fa-building"></i>臺灣師範大學</span>
-                            <span class="duration"><i class="far fa-calendar-alt"></i>2019 年 1 月 - 2019 年 10 月</span>
+                            <h3 class="job-title work-2">VR研究計畫助理</h3>
+                            <span class="company"><i class="far fa-building"></i><span class="work-2">臺灣師範大學</span></span>
+                            <span class="duration"><i class="far fa-calendar-alt"></i><span class="work-2">2019 年 1 月 - 2019 年 10 月</span></span>
 
                             <div class="experience-detail-group">
-
-                                <div class="experience-detail">1. VR師資培訓系統之交互介面設計與操作行為研究。<br>2. 虛擬實境應用於教師課堂管理能力訓練之研究計畫管理。</div>
+                                <div class="experience-detail work-2">1. VR師資培訓系統之交互介面設計與操作行為研究。<br>2. 虛擬實境應用於教師課堂管理能力訓練之研究計畫管理。</div>
                             </div>
-                            <div><a class="check-project btn btn-secondary btn-sm" href="./html/project2.html" role="button" target="_blank"><i class="fas fa-search"></i> 工作成果</a></div>
+                            <div><a class="check-project btn btn-secondary btn-sm" href="./html/project2.html" role="button" target="_blank"><i class="fas fa-search"></i> <span class="work-2">工作成果</span></a></div>
                         </div>
 
                         <div class="experience-item">
-                            <h3 class="job-title">介面開發工程師</h3>
-                            <span class="company"><i class="far fa-building"></i>工業技術研究院</span>
-                            <span class="duration"><i class="far fa-calendar-alt"></i>2017 年 11 月 - 2019 年 1 月</span>
+                            <h3 class="job-title work-3">研發工程師</h3>
+                            <span class="company"><i class="far fa-building"></i><span class="work-3">工業技術研究院</span></span>
+                            <span class="duration"><i class="far fa-calendar-alt"></i><span class="work-3">2017 年 11 月 - 2019 年 1 月</span></span>
 
                             <div class="experience-detail-group">
 
-                                <div class="experience-detail">1. OLED顯示面板UIUX設計與Unity互動效果開發。<br>2. Python和PyQt影像資料視覺化UI設計開發。<br>3. OLED透明顯示器結合影像辨識之專利發表。</div>
+                                <div class="experience-detail work-3">1. OLED顯示面板UIUX設計與Unity互動效果開發。<br>2. Python和PyQt影像資料視覺化UI設計開發。<br>3. OLED透明顯示器結合影像辨識之專利發表。</div>
                             </div>
                             <div>
-                                <a class="check-project btn btn-secondary btn-sm" href="./html/project3.html" role="button" target="_blank"><i class="fas fa-search"></i> 工作成果</a>
+                                <a class="check-project btn btn-secondary btn-sm" href="./html/project3.html" role="button" target="_blank"><i class="fas fa-search"></i> <span class="work-3">工作成果</span></a>
                             </div>
                         </div>
                     </div>
@@ -267,41 +275,41 @@
                 <section class="education-section"></section>
             </div>
             <!-- 時間軸區 -->
-            <div class="container">
-                <h2 id="move-to-education" class="text-center mt-5">研習與學術經歷</h2>
+            <div class="container education-text-info">
+                <h2 id="move-to-education" class="text-center mt-5 education-title">研習與學術經歷</h2>
                 <div class="row">
                     <div class="timeline-container">
                         <ul class="timeline">
-                            <li>
+                            <li class="edu-5">
                                 <h3>2020</h3>
-                                <h5>大數據分析 自強工業科學基金會</h5>
-                                <p>錄取清華大學自強基金會的大數據分析師養成班，完成368小時、約莫3個月的資料分析訓練。使用python進行機器學習完成美國之貸款人呆帳率預測，並獨立開發網站。
-                                    <div><a class="check-project btn btn-info btn-sm" href="http://excited-string.surge.sh/index.html" role="button" target="_blank"><i class="fas fa-search"></i> 網站成果</a></div>
+                                <h5 class="edu-org">大數據分析 自強工業科學基金會</h5>
+                                <p><span class="edu-descript">錄取清華大學自強基金會的大數據分析師養成班，完成368小時、約莫3個月的資料分析訓練。使用python進行機器學習完成美國之貸款人呆帳率預測，並獨立開發網站。</span>
+                                    <div><a class="check-project btn btn-info btn-sm" href="http://excited-string.surge.sh/index.html" role="button" target="_blank"><i class="fas fa-search"></i> <span class="edu-demo">網站成果</span></a></div>
                                 </p>
                             </li>
-                            <li>
+                            <li class="edu-4">
                                 <h3>2016</h3>
-                                <h5>文化替代役 國立台灣美術館</h5>
-                                <p>於台中的國立台灣美術館服役。協助國家級美術單位使用科技與設計創作達到文化平權(身心障礙者的藝術體驗)的目的。</p>
+                                <h5 class="edu-org">文化替代役 國立台灣美術館</h5>
+                                <p><span class="edu-descript">於台中的國立台灣美術館服役。協助國家級美術單位使用科技與設計創作達到文化平權(身心障礙者的藝術體驗)的目的。</span></p>
                             </li>
-                            <li>
+                            <li class="edu-3">
                                 <h3>2015</h3>
-                                <h5>互動設計所 台夫特科技大學</h5>
-                                <p>錄取教育部2015年藝術與設計菁英海外培訓全額獎學金前往荷蘭 TU Delft 就讀互動設計所，鑽研用戶的正面情感體驗提升。
-                                    <div><a class="check-project btn btn-info btn-sm" href="https://youtu.be/z9h_xTnMJMU" role="button" target="_blank"><i class="fas fa-play-circle"></i> 播放作品</a></div>
+                                <h5 class="edu-org">互動設計所 台夫特科技大學</h5>
+                                <p><span class="edu-descript">錄取教育部2015年藝術與設計菁英海外培訓全額獎學金前往荷蘭 TU Delft 就讀互動設計所，鑽研用戶的正面情感體驗提升。</span> 
+                                    <div><a class="check-project btn btn-info btn-sm" href="https://youtu.be/z9h_xTnMJMU" role="button" target="_blank"><i class="fas fa-play-circle"></i> <span class="edu-demo">播放作品</span></a></div>
                                 </p>
                             </li>
-                            <li>
+                            <li class="edu-2">
                                 <h3>2013</h3>
-                                <h5>工業設計所 國立成功大學</h5>
-                                <p>研究擴增實境應用於高齡者認知能力的訓練與提升。論文成果為完成一座以浮空顯像為技術的認知復健裝置，並架設於長青中心提供高齡者使用。
-                                    <div><a class="check-project btn btn-info btn-sm" href="https://youtu.be/bDHzhqRejY0" role="button" target="_blank"><i class="fas fa-play-circle"></i> 播放作品</a></div>
+                                <h5 class="edu-org">工業設計所 國立成功大學</h5>
+                                <p><span class="edu-descript">研究擴增實境應用於高齡者認知能力的訓練與提升。論文成果為完成一座以浮空顯像為技術的認知復健裝置，並架設於長青中心提供高齡者使用。</span> 
+                                    <div><a class="check-project btn btn-info btn-sm" href="https://youtu.be/bDHzhqRejY0" role="button" target="_blank"><i class="fas fa-play-circle"></i> <span class="edu-demo">播放作品</span></a></div>
                                 </p>
                             </li>
-                            <li>
+                            <li class="edu-1">
                                 <h3>2009</h3>
-                                <h5>工業設計系 國立成功大學</h5>
-                                <p>以全年級第二名的成績畢業。畢業專題研究心智障礙者的肢體人因與認知能力因素，設計一套適合他們工作使用的烘焙用具，並獲得2013新一代設計獎銅獎。</p>
+                                <h5 class="edu-org">工業設計系 國立成功大學</h5>
+                                <p><span class="edu-descript">以全年級第二名的成績畢業。畢業專題研究心智障礙者的肢體人因與認知能力因素，設計一套適合他們工作使用的烘焙用具，並獲得2013新一代設計獎銅獎。</span></p>
                             </li>
                         </ul>
                     </div>
@@ -331,6 +339,7 @@
     <script src="assets/dist/js/splide.min.js"></script>
     <script src="./js/action.js"></script>
     <script src="./js/animation.js"></script>
+    <script src="./js/translate.js"></script>
 </body>
 
 </html>
