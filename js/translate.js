@@ -133,6 +133,11 @@ const lang_obj =
         english : '1. Front-end development and UIUX of Moldx3D Material Wizard.\n2. UI design and implementation of Moldex3D Everything(auto-analysis).\n3. User research on CAD and CAE users.'
     },
     {
+        item : document.querySelector('.experience-section .experience .experience-item .check-project .work-1'),
+        chinese : '工作成果',
+        english : 'Demo'
+    },
+    {
         item : document.querySelector('.experience-section .experience .experience-item .job-title.work-2'),
         chinese : 'VR研究計畫助理',
         english : 'Research Assistant'
