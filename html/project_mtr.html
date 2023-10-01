@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaterialWizard</title>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@100&family=Oswald&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <!-- open css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- private css -->
+        <link rel="stylesheet" href="../css/magnify.css">
+        <link rel="stylesheet" href="../css/project_mtr.css">
+</head>
+<body>
+    <!-- BANNER -->
+    <div class="jumbotron jumbotron-fluid banner-container">
+        <div  class="container banner-container-txt">
+            <div>          
+                <h1 class="display-5">Material Wizard</h1>
+                <p>Polymer and non-polymer material database</p>
+                <p class="mtrwzd-descrp">Moldex3D材料精靈是一款協助模流分析工程師檢索化工材料的平台，除了可以檢視材料的各種物理性質外，還提供編輯材料參數、比較材料、搜尋材料等服務。而2023版的材料精靈相較於2022版，更是一全新大升級，從使用者研究出發分析使用上的盲點，進行風格、體驗上的優化。</p>
+            </div>
+        </div>
+    </div>
+    <!-- RESEARCH -->
+    <div class="container research-container">
+        <div style="margin: 0 auto;" class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 research-card">
+                <div class="card" style="width: 18rem; ">
+                    <img src="../img/mdxmat/mat_2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">使用者研究</h5>
+                      <p class="card-text">
+                        研究新手和專家CAE工程師、材料研究員在操作2022材料精靈上的易用性問題、以及他們對使用上的期待，建立顧客旅程圖。同時評估2022材料精靈的功能地圖，重新規劃最佳的操作流程。                      
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 research-card">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/mdxmat/mat_11.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">UIUX介面設計</h5>
+                      <p class="card-text">
+                        根據使用者研究分析結果，產生數個UI設計方針(Design Guidelines)，並透過Figma和AdobeXD規劃優化後的介面雛形。過程中反覆與使用者族群討論並迭代設計，確保成果及時響應訴求。
+                      </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 research-card">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/mdxmat/mat_3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">前端程式開發</h5>
+                      <p class="card-text">
+                        兼顧前端程式開發的角色，完成材料精靈中「編輯和新增材料」的功能，取得材料參數，提供使用者修改參數後，回傳參數給後端完成編輯材料的流程。以現代化UI框架與元件庫完成介面建構。
+                      </p>
+                    </div>
+                  </div>
+            </div>
+            
+
+          </div>
+    </div>
+    <!-- UIUX & Study -->
+    <div class="container uiux-container">
+        <h2 class="title display-4">
+            User Research
+        </h2>
+        <!-- WEAKNESS -->
+        <div class="row">
+            <div style="align-self: center;" class="col-lg-6 col-12">
+                <div >
+                    <h4>舊版痛點分析 Weakness</h4>
+                    <p>
+                      2022版的軟體在使用功能與顯示效果上有諸多限制，導致使用者無法有效率地完成材料檢索。依據易用性測試和自主測試，大致列出以下主要痛點： 
+                    </p>
+                </div>
+
+                <div style="border-left: 2.5px solid rgb(222, 222, 222); ">
+                    <div style="margin-left: 10px">
+                        <p>檢視材料：調整各軸資料顯示範圍的功能不明確</p>
+                        <p>比較材料：允許比較的數量受限、功能入口不明確、無法比較所有性質</p>
+                        <p>搜尋材料：進階搜尋條件太少、功能入口不明確、無法排序結果</p>
+                        <p>編輯材料：無法快速挑選要編修的步驟直接編輯、加密參數非全域功能</p>
+                        <p>新增材料：新增的材料類型層次不清楚</p>
+                    </div>
+                </div>
+              
+            </div>
+            <div  class="col-lg-6 col-12">
+                <img class="uiux-2022-img" width="100%" src="../img/mdxmat/mat2022_1.png" alt="">
+            </div>
+        </div>
+        <br>
+        <br>
+        <!-- PERSONA -->
+        <div class="row">
+            <div style="align-self: center;" class="col-12 persona-title-min">
+                <div style="z-index: 1000; text-align: center; margin-bottom: 20px;">
+                    <h4>人物誌 Persona</h4>
+                    <p>依照使用者訪談結果，可以將材料精靈的使用者大致分成新手與專家。點選以下按鈕可查看各自的人物誌：</p>
+                    <button type="button" class="btn btn-primary expert-btn">專家使用者</button>
+                    <button type="button" class="btn btn-secondary novice-btn">新手使用者</button>
+                </div>              
+            </div>
+            <div style="position: relative; height: 400px;"  class="col-lg-8 col-12">
+                <div style="position: absolute; z-index: 100;">
+                    <img class="uiux-2022-img persona-top" src="../img/mdxmat/mat_persona_1.png" alt="">
+                </div>
+                <div style="position: absolute; z-index: 1;left:0px; top:15px">
+                    <img class="uiux-2022-img persona-bot" src="../img/mdxmat/mat_persona_2.png" alt="">
+                </div>
+            </div>
+            <div style="align-self: center;" class="col-lg-4 col-12 persona-title-max">
+                <div >
+                    <h4>人物誌Persona</h4>
+                    <p>依照使用者訪談結果，可以將材料精靈的使用者大致分成新手與專家。點選以下按鈕可查看各自的人物誌：</p>
+                    <button type="button" class="btn btn-primary expert-btn">專家使用者</button>
+                    <button type="button" class="btn btn-secondary novice-btn">新手使用者</button>
+                </div>              
+            </div>
+        </div>
+        <br>
+        <br>
+        <!-- FUNCTION MAP -->
+        <div class="row">
+            <div  class="col-12 text-center">
+                <h4>功能地圖 Function Map</h4>
+                <p>將預期的功能歸納成系統優化方向，平行和垂直展開優化版材料精靈支援的功能</p>
+                <img  width="100%" src="../img/mdxmat/mat_functionmap_1.png" alt="">
+            </div>
+        </div>
+        <br>
+        <br>
+        <!-- FORCE DIRECTIED TREE -->
+        <div class="row">
+            <div  class="col-12 text-center">
+                <h4>關聯圖 Force-Directed Tree</h4>
+                <p>依序將使用者提出的需求和問題分類，並計算嚴重性和數量，由此可見在優化方向需要注重的功能(面積越大者)</p>
+            </div>
+            <div id="chartdiv"></div>
+        </div>
+        
+    </div>
+    <!-- FEATURES -->
+    <div class="container feature-container">
+      <h2 class="title display-4">
+        Key Features
+      </h2>
+      <!-- feature 1 -->
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <img class="feature-img" width="100%" src="../img/mdxmat/mat_6.gif" alt="">
+        </div>
+        <div style="align-self: center;" class="col-lg-6 col-12">
+          <h5>材料曲線與數據</h5>
+          <p>
+            材料精靈提供了多種材料的資訊。材料清單使用樹狀層次組件顯示，而材料的屬性則使用分頁組件橫向排列。材料數據以折線圖的形式將資料進行視覺化呈現。
+          </p>
+        </div>
+      </div>
+      <br>
+
+      <!-- feature 2 -->
+      <div class="row">
+        <div  class="col-lg-6 col-12">
+          <img class="feature-img" width="100%" src="../img/mdxmat/mat_7.gif" alt="">
+        </div>
+        <div style="align-self: center;" class="col-lg-6 col-12">
+          <h5>建立與編輯材料</h5>
+          <p>
+            材料精靈還提供了材料數據編輯功能。使用步驟組件，列出材料的性質，並使用表格組件顯示每個性質的參數。當用戶完成所有步驟後，材料編輯就完成了。
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- feature 3 -->
+      <div class="row">
+        <div  class="col-lg-6 col-12">
+          <img class="feature-img" width="100%" src="../img/mdxmat/mat_9.gif" alt="">
+        </div>
+        <div style="align-self: center;" class="col-lg-6 col-12">
+          <h5>比較材料參數</h5>
+          <p>
+            選擇適當的材料對於模擬分析非常重要，材料精靈提供使用者可以比較高達10種材料，並一次呈現各個性質疊合的效果，讓使用者不用再一筆筆確認材料細節，而是可以透過比較功能一次同步看完全部。
+          </p>
+        </div>
+      </div>
+      <br>
+
+    </div>
+    <!-- DEMO -->
+    <div class="container demo-container">
+      <h2 class="title display-4">
+        Demo
+      </h2>
+      <p class="text-center">
+        可以點選以下功能按鈕，並在滑鼠移動到圖片上方用放大鏡檢視細節：
+      </p>
+      <div class="row">
+        <div style="align-self: center;" class="col-12 col-lg-2">          
+            <div class="demo-wrapper bd-grid">
+              <div class="demo_content">
+                <button type="button" class="btn btn-danger demo_icon" data-id="1"  title="View Material">檢視材料</button>
+              </div>      
+              <div class="demo_content">
+                <button type="button" class="btn btn-danger demo_icon" data-id="2"  title="Curve Setting">範圍設定</button>  
+            </div>      
+              <div class="demo_content">                            
+                <button type="button" class="btn btn-danger demo_icon" data-id="3"  title="Compare Material">比較材料</button> 
+              </div>      
+              <div class="demo_content">
+                <button type="button" class="btn btn-danger demo_icon"  data-id="4"  title="Search Material">搜尋材料</button>                      
+              </div>
+              <div class="demo_content">
+                <button type="button" class="btn btn-danger demo_icon"   data-id="5"  title="Modify Material Data">修改材料</button>                     
+              </div>
+            </div>         
+        </div>
+        <div class="col-12 col-lg-10 demo-img-wrapper">
+          <img class="demo-img zoom" width="100%" src="../img/mdxmat/mat_demo_1.png"  data-magnify-src="../img/mdxmat/mat_demo_1.png">
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <!-- END -->
+    <div class="container-fluid end-container">
+    </div>
+    <!-- TECHNOLOGIES -->
+    <!-- <div class="tech-container">
+      <h2 class="title display-4">
+        Technology
+      </h2>
+      <div class="tech-wrapper bd-grid">
+        <div class="tech_content">
+          <i id="html" class='bx bxl-html5 tech_icon '></i>
+          <span class="interests_name">HTML</span>
+        </div>
+
+        <div class="tech_content">
+          <i id="css" class='bx bxl-css3 tech_icon ' ></i>
+          <span class="interests_name">CSS</span>
+        </div>
+
+        <div class="tech_content">
+          <i id="ts" class='bx bxl-typescript tech_icon' ></i>       
+          <span class="interests_name">Typescript</span>
+        </div>
+
+        <div class="tech_content">
+          <i id="chart" class='bx bx-line-chart-down tech_icon'></i>      
+          <span class="interests_name">Chart.js</span>
+        </div>
+
+        <div class="tech_content">
+          <i id="angular" class='bx bxl-angular tech_icon' ></i>
+          <span class="interests_name">Angular</span>
+        </div>
+    </div>
+    </div> -->
+
+
+    <!-- JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
+    <!-- AMCHART -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+   
+    <script src="../js/armchart_mtr.js"></script>
+    <script src="../js/jquery.magnify.js"></script>
+    <script src="../js/project_mtr.js"></script>
+</body>
+</html>

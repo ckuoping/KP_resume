@@ -12,10 +12,10 @@ const project_filters = document.querySelectorAll('.project-filter')
 
 const sideproject_links = [
     { name: '#sideproject-img1', link: "https://ckuoping.github.io/responsive_shopping_web/" },
-    { name: '#sideproject-img2', link: "https://github.com/ckuoping/airqualityAPI" },
+    { name: '#sideproject-img2', link: "https://www.youtube.com/watch?v=C2y-MJhVH_g" },
     { name: '#sideproject-img3', link: "http://excited-string.surge.sh/index.html" },
     { name: '#sideproject-img4', link: "./html/project1.html" },
-    { name: '#sideproject-img5', link: "https://github.com/ckuoping/musicplayer" },
+    { name: '#sideproject-img5', link: "https://www.youtube.com/watch?v=-HEMD3I000U" },
 ]
 
 
