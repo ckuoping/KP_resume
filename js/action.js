@@ -16,6 +16,7 @@ const sideproject_links = [
     { name: '#sideproject-img3', link: "http://excited-string.surge.sh/index.html" },
     { name: '#sideproject-img4', link: "./html/project1.html" },
     { name: '#sideproject-img5', link: "https://www.youtube.com/watch?v=-HEMD3I000U" },
+    { name: '#sideproject-img6', link: "./html/project2.html" },
 ]
 
 

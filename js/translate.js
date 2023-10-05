@@ -114,7 +114,7 @@ const lang_obj =
     },
     {
         item : document.querySelector('.experience-section .experience .experience-item .job-title.work-1'),
-        chinese : '高級設計師',
+        chinese : '專案副理',
         english : 'Deputy Project Manager'
     },
     {
@@ -129,8 +129,8 @@ const lang_obj =
     },
     {
         item : document.querySelector('.experience-section .experience .experience-item .experience-detail.work-1'),
-        chinese : '1. CAE模流分析桌上型應用程式的UIUX設計與功能優化。\n2. Angular網頁應用程式前端開發(網站內容為高分子材料的檢索)。\n3. 交大資工UIUX產學合作負責。',
-        english : '1. Front-end development and UIUX of Moldx3D Material Wizard.\n2. UI design and implementation of Moldex3D Everything(auto-analysis).\n3. User research on CAD and CAE users.'
+        chinese : '1. 前端開發：協助敝司產品雲端化，主動進修Angular並負責產品前端的UI程式與資料處理。目前以產品的維護和新功能開發為主。\n2. 介面設計：改善目前體驗不佳的操作流程，做競品分析與創意發想，提出優化Flow和Mockup。\n3. 規格文件：協助制定公司軟體的介面UI Guideline。\n4. 用戶研究：對使用者進行客戶廠訪和用戶研究，產出質性分析和客戶需求報告書。',
+        english : '1. Responsible for front-end development of Moldex3D Material Wizard using Angular framework.\n2. UIUX design of Moldex3D Studio, including competitor analysis, ideation and prototypes.\n3. Define UI component guidelines for Moldex3D Studio.\n4. Qualitative user studies and market research.'
     },
     {
         item : document.querySelector('.experience-section .experience .experience-item .check-project .work-1'),
@@ -179,8 +179,8 @@ const lang_obj =
     },
     {
         item : document.querySelector('.experience-section .experience .experience-item .experience-detail.work-3'),
-        chinese : '1. OLED顯示面板UIUX設計與Unity互動效果開發。\n2. Python和PyQt影像資料視覺化UI設計開發。\n3. OLED透明顯示器結合影像辨識之專利發表。',
-        english : '1. UI developmenot of transparent display system using PyQt and VTK.\n2. User and marketing research of transparent display.\n3. Patent drafting and paper publication.'
+        chinese : '1. 介面實作：透明顯示系統的UI平台開發，使用Python、PyQt和VTK\n2. 場域研究：進行用戶和市場研究，評估透明顯示在實際場域中的可行性和技術需求。\n3. 專利發表：參與透明顯示系統的技術開發專利撰寫和論文發表工作。',
+        english : '1. UI developmenot of transparent display system using Python, PyQt and VTK.\n2. User and marketing research of transparent display to evaluate technological availability.\n3. Patent drafting and paper publication.'
     },
     {
         item : document.querySelector('.experience-section .experience .experience-item .check-project .work-3'),

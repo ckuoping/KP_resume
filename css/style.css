@@ -647,10 +647,13 @@ footer {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+        gap: 0.8rem;
     }
-    .skill,
-    .experience-item {
+    .skill {
         width: 30%;
+    }
+    .experience-item {
+        width: 50%;
     }
     .job-title {
         /* border-top: 1px solid #999999; */
