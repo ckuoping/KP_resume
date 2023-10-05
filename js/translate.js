@@ -89,11 +89,11 @@ const lang_obj =
     {
         item : document.querySelector('.skill-section .skills .skill .skill-name .skill-2'),
         chinese : 'UIUX設計',
-        english : 'UIUX Research and Design'
+        english : 'UIUX Design'
     },
     {
         item : document.querySelector('.skill-section .skills .skill .skill-description.skill-2'),
-        chinese : '擅長使用者研究與體驗設計。精通Wireframe和Mockup製作等原型設計與開發能力。',
+        chinese : '擅長使用者UX研究與介面UI設計，兼顧美感、易用性與一致性規劃軟體新功能的介面和優化既有流程的盲點。',
         english : 'Strong in user analysis and interaction design. Good at translating ideas into wireframes and mockups that lead to intuitive UX.'
     }
     ,
@@ -129,8 +129,8 @@ const lang_obj =
     },
     {
         item : document.querySelector('.experience-section .experience .experience-item .experience-detail.work-1'),
-        chinese : '1. 前端開發：協助敝司產品雲端化，主動進修Angular並負責產品前端的UI程式與資料處理。目前以產品的維護和新功能開發為主。\n2. 介面設計：改善目前體驗不佳的操作流程，做競品分析與創意發想，提出優化Flow和Mockup。\n3. 規格文件：協助制定公司軟體的介面UI Guideline。\n4. 用戶研究：對使用者進行客戶廠訪和用戶研究，產出質性分析和客戶需求報告書。',
-        english : '1. Responsible for front-end development of Moldex3D Material Wizard using Angular framework.\n2. UIUX design of Moldex3D Studio, including competitor analysis, ideation and prototypes.\n3. Define UI component guidelines for Moldex3D Studio.\n4. Qualitative user studies and market research.'
+        chinese : '1. 介面設計：改善目前體驗不佳的操作流程，做競品分析與創意發想，提出優化Flow和Mockup。\n2. 前端開發：協助敝司產品雲端化，主動進修Angular並負責產品前端的UI程式與資料處理。目前以產品的維護和新功能開發為主。\n3. 規格文件：協助制定公司軟體的介面UI Guideline。\n4. 用戶研究：對使用者進行客戶廠訪和用戶研究，產出質性分析和客戶需求報告書。',
+        english : '1.  UIUX design of Moldex3D Studio, including competitor analysis, ideation and prototypes.\n2. Responsible for front-end development of Moldex3D Material Wizard using Angular framework.\n3. Define UI component guidelines for Moldex3D Studio.\n4. Qualitative user studies and market research.'
     },
     {
         item : document.querySelector('.experience-section .experience .experience-item .check-project .work-1'),
