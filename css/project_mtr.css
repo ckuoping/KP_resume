@@ -30,6 +30,12 @@
 .banner-container-txt .mtrwzd-descrp{
     width: 300px;
 }
+.mtrwzd-intro-max{
+    display: block;
+}
+.mtrwzd-intro-min{
+    display: none;
+}
 
 .uiux-2022-img{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -47,7 +53,10 @@
 .persona-title-max{
     display: block;
 }
-
+.persona-img-wrapper{
+    position: relative; 
+    height: 400px;
+}
 .persona-top,.persona-bot{
     width: 700px;
 }
@@ -132,8 +141,20 @@
 
 /*========= MEDIA QUERY =========*/
 @media screen and (max-width:1200px){
+    .banner-container{
+        height: 500px;
+    }
+    .mtrwzd-intro-max{
+        display: none;
+    }
+    .mtrwzd-intro-min{
+        display: block;
+        padding: 5px 25px;
+    }
+
     .persona-top,.persona-bot{
-        width: 650px;
+        width: 601px;
+        height: 330px;
     }
 }
 @media screen and (max-width:992px) {
@@ -142,6 +163,11 @@
     }
     .persona-title-max{
         display: none;
+    }
+
+    .persona-top,.persona-bot{
+        width: 700px;
+        height: 384px;
     }
 
 
@@ -169,8 +195,34 @@
     }
 }
 @media screen and (max-width:756px){
+
+    .banner-container{
+        height: 300px;
+    }
     .persona-top,.persona-bot{
-        width: 500px;
+        width: 546px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:620px){
+    .persona-img-wrapper{
+        position: relative; 
+        height: 250px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .persona-top,.persona-bot{
+        width: 420px;
+        height: 230px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .persona-top,.persona-bot{
+        width: 360px;
+        height: 197px;
     }
 }
 
