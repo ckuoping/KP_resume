@@ -9,7 +9,7 @@ const lang_obj =
     {
         item : document.getElementById('my-skills'),
         chinese : '專業技能',
-        english : 'Skills'
+        english : 'Expertise'
     },
     {
         item : document.getElementById('my-jobs'),
@@ -23,23 +23,23 @@ const lang_obj =
     },
     {
         item : document.querySelector('.personal-text-info .title'),
-        chinese : 'UIUX設計 | 前端開發 | 資料分析視覺化',
-        english : 'UIUX | Web Development | Data Visualization'
+        chinese : 'UIUX設計 | 網頁前端 | 資料分析',
+        english : 'UIUX | Web Dev & Design | Data Analysis'
     },
     {
         item : document.querySelector('.personal-text-info .description'),
-        chinese : '你好，我是張國屏，我擁有UIUX與前端開發的實務經驗與開發能力。歡迎參考以下連結了解我的互動介面設計、程式與資料分析相關作品。',
-        english : 'My name is Kuo-Ping (Marvin Chang). I am a UI developer with over 5 year experience in UIUX and Web development. Feel free to read my online resume.'
+        chinese : '你好，我是張國屏，我是兼具網頁前端與UIUX的設計師。歡迎瀏覽我的履歷以了解我的設計、開發與分析相關作品。',
+        english : 'My name is Kuo-Ping (Marvin Chang). I am both a front-end developer and UIUX designer. Feel free to read my online resume and portfolio.'
     },
     {
         item : document.querySelector('.expertise-text-info .expertise-title'),
-        chinese : '工作技能與專業能力',
-        english : 'Expertise'.toUpperCase() 
+        chinese : '自我介紹',
+        english : 'Intro'.toUpperCase() 
     },
     {
         item : document.querySelector('.expertise-text-info .expertise-description'),
-        chinese : '專長軟體系統的UIUX設計與開發；負責過的系統包含桌上型應用程式、網頁應用程式以及ARVR平台。因應工作性質與自我精進，我具備使用者研究、原型設計與程式開發等工作能力。',
-        english : 'Marvin is specialized at UIUX design and UI development. He is equipped with the skill of user research, design and programming. He has experienced with design among deskop applications, web applications and ARVR installations. Currently, he worked as a deputy project manager and senior UIUX designer for Moldex3D Studio.'
+        chinese : '專長軟體系統的UIUX設計與開發。負責過的系統包含桌上型應用程式、網頁應用程式以及ARVR平台。因應工作性質與自我精進，我具備使用者研究、原型設計與程式開發等工作能力；目前任職於CAE模流軟體公司協助公司軟體的使用者體驗設計和網頁前端開發。',
+        english : 'Marvin is specialized in UIUX design and UI development. He is equipped with the skill of user research, design and programming. He has experienced with design among deskop applications, web applications and ARVR installations. Currently, he worked as a deputy project manager and senior UIUX designer for Moldex3D Studio.'
     },
     {
         item : document.querySelector('.expertise-text-info .box1 span'),
@@ -63,18 +63,18 @@ const lang_obj =
     },
     {
         item : document.querySelector('.portfolio-text-info .portfolio-title'),
-        chinese : '來看看我的Portfolios吧!',
-        english : 'Portfolio'.toUpperCase() 
+        chinese : '專案作品',
+        english : 'Projects'.toUpperCase() 
     },
     {
         item : document.querySelector('.portfolio-text-info .portfolio-description'),
-        chinese : '我平時喜歡研究各種介面互動行為和UI元件，並應用在前端程式上；定期規畫主題性的小專案製作UIUX Prototypes。更多內容可以參考我的Github:',
+        chinese : '工作之餘會主動研究各種介面UI元件並應用在前端程式上。定期規畫主題性的小專案製作Prototypes。更多內容可點擊下方圖面或可以參考我的Github:',
         english : 'Marvin is enthusiastic about studying different UI components and their interactive responses. Unlike typical designers, Marvin is able to implement his design ideas as side projects on his Github:'
     },
     {
         item : document.querySelector('.skill-section .skill-title'),
         chinese : '專業技能',
-        english : 'Skills'
+        english : 'Expertise'
     },
     {
         item : document.querySelector('.skill-section .skills .skill .skill-name .skill-1'),
@@ -83,8 +83,8 @@ const lang_obj =
     },
     {
         item : document.querySelector('.skill-section .skills .skill .skill-description.skill-1'),
-        chinese : '具備前端網頁的開發能力。熟悉Angular、HTML、CSS 和 JavaScript；擅長網頁切版、RWD、操作 DOM 事件、串接 API取得即時JSON資料，並使用Flask架站。',
-        english : 'Skilled in web page layout, document object model(DOM), and responsive design(RWD). Experienced with Node.js to integrate with RESTful APIs for complete web applications. Developed with frameworks such as Angluar, Bootstrap and Chart.js.'
+        chinese : '專長前端網頁設計與開發。具備網頁切版、RWD、DOM操作、串接API並使用express和flask架站的經驗。',
+        english : 'Skilled in web development. Experienced with layout, DOM, RWD, and RESTful APIs for complete applications.'
     },
     {
         item : document.querySelector('.skill-section .skills .skill .skill-name .skill-2'),
@@ -93,19 +93,19 @@ const lang_obj =
     },
     {
         item : document.querySelector('.skill-section .skills .skill .skill-description.skill-2'),
-        chinese : '擅長使用者經驗研究和評估法。熟悉AdobeXD與相關系列軟體製作Wireframe和Mockup。也具有Leap Motion和Unity製作虛實整合與人機互動的經驗。',
-        english : 'Strong in user analysis to define user needs and product requirements. Experienced with usability tests to evaluate the platform functionality. Good at translating ideas into wireframes and mockups that lead to intuitive UX.'
+        chinese : '擅長使用者研究與體驗設計。精通Wireframe和Mockup製作等原型設計與開發能力。',
+        english : 'Strong in user analysis and interaction design. Good at translating ideas into wireframes and mockups that lead to intuitive UX.'
     }
     ,
     {
         item : document.querySelector('.skill-section .skills .skill .skill-name .skill-3'),
-        chinese : '專案管理',
-        english : 'Project Management'
+        chinese : '產品管理',
+        english : 'Product Management'
     },
     {
         item : document.querySelector('.skill-section .skills .skill .skill-description.skill-3'),
-        chinese : '在各工作階段也身兼專案管理者，平衡與客戶廠商的應對以及內部的開發需求。此外也具備Python資料分析、機器學習與視覺化的相關經驗。',
-        english : 'Experienced with Objective and Key Results(OKR) for program management. Good at communicating with cross-functional teams. Strong in delivering spec documents and scheduling development plan.'
+        chinese : '掌握客戶需求、評估規格開發與排程。擅長分析報告歸納產業與市場評估和開發計畫。',
+        english : 'Good at market-pull product development. Strong in delivering research documents and scheduling development plan.'
     },
     {
         item : document.querySelector('.experience-section .work-title'),
@@ -193,6 +193,16 @@ const lang_obj =
         english : 'Education'
     },
     {
+        item : document.querySelector('.education-text-info .edu-6 .edu-org'),
+        chinese : '工業工程學分班 國立清華大學',
+        english : 'Industrial Engineering, NTHU'
+    },
+    {
+        item : document.querySelector('.education-text-info .edu-6 .edu-descript'),
+        chinese : '在職進修新產品開發管理，研究以市場需求導向的產品在規劃、開發以致整個產品生命週期間如何以實證和量化的方法確保產品開發品質，達到利潤最大化。',
+        english : 'Studied New Product Development(NPD) at NTHU. Using empirical and quantitative methods, I studied how market-pull products are planned, developed, and managed throughout the entire product lifecycle.'
+    },
+    {
         item : document.querySelector('.education-text-info .edu-5 .edu-org'),
         chinese : '大數據分析 自強工業科學基金會',
         english : 'Big Data and Cloud Computing, TCFST'
@@ -267,13 +277,15 @@ lang_btn.addEventListener('click',function(){
     if(lang_flag == 1){
 
         lang_obj.forEach(e=>{
-            e.item.innerText = e.english;
+            if(e.item!==null)
+                e.item.innerText = e.english;
         })        
     }
     else
     {
         lang_obj.forEach(e=>{
-            e.item.innerText = e.chinese;
+            if(e.item!==null)
+                e.item.innerText = e.chinese;
         })
     }
     
