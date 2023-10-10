@@ -61,7 +61,8 @@ function openProjectMtr(){
     let pswd = prompt('密碼');
     let ans = 'moldex3d!';
     if(pswd === ans){
-        window.open("../html/project_mtr.html", "_blank");
+        // window.open("../html/project_mtr.html", "_blank");
+        window.open("https://ckuoping.github.io/KP_resume/html/project_mtr.html", "_blank");
     }else{
         alert('invalid password');
     }
