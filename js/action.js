@@ -57,6 +57,17 @@ for (let i = 0; i < sideproject_links.length; i++) {
 
 document.addEventListener('scroll', timeline);
 
+function openProjectMtr(){
+    let pswd = prompt('密碼');
+    let ans = 'moldex3d!';
+    if(pswd === ans){
+        window.open("../html/project_mtr.html", "_blank");
+    }else{
+        alert('invalid password');
+    }
+    
+}
+
 // 後台區
 function scrollToProjects() {
     document.getElementById('move-to-projects').scrollIntoView({
