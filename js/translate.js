@@ -272,6 +272,11 @@ const lang_obj =
 
 let lang_flag = 1
 
+lang_obj.forEach(e=>{
+    if(e.item!==null)
+        e.item.innerText = e.english;
+}) 
+
 lang_btn.addEventListener('click',function(){
     
     if(lang_flag == 1){

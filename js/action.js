@@ -58,15 +58,18 @@ for (let i = 0; i < sideproject_links.length; i++) {
 document.addEventListener('scroll', timeline);
 
 function openProjectMtr(){
+    // without pswd
+    window.open("https://ckuoping.github.io/KP_resume/html/project_mtr.html", "_blank");
+    // with pswd
+    /*
     let pswd = prompt('密碼');
     let ans = 'moldex3d!';
     if(pswd === ans){
-        // window.open("../html/project_mtr.html", "_blank");
         window.open("https://ckuoping.github.io/KP_resume/html/project_mtr.html", "_blank");
     }else{
         alert('invalid password');
     }
-    
+    */
 }
 
 // 後台區
